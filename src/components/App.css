@@ -1,0 +1,812 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+body {
+  background-color: rgb(39, 38, 44);
+  min-width: 100%;
+}
+* {
+  max-height: fit-content;
+  box-sizing: border-box;
+  margin: 0;
+  color: #f5f5ff;
+  font-family: "Kanit", sans-serif;
+}
+
+/* /////////  Welcome /////////////*/
+.welcomeimage {
+  opacity: 0.9;
+  max-width: 100%;
+  max-height: 100%;
+}
+/*////////////// LOADING ///////////////*/
+.loading-screen {
+  height: 100vh;
+  position: relative;
+}
+.loading-div {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: auto;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+}
+.loading-div p {
+  padding-top: 10px;
+}
+.loading-icon {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  top: 50%;
+  top: 50%;
+  vertical-align: middle;
+  background-color: #df204d;
+  border-radius: 50%;
+}
+
+/*  ////////  Nav Bar /////////// */
+.Logo {
+  margin-left: 5px;
+  max-height: 80px;
+  float: left;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  min-width: 100vh;
+  margin-bottom: 0;
+  justify-content: space-between;
+
+  background-color: rgb(39, 38, 44); /*232743;*/
+}
+.logoname {
+  display: flex;
+}
+.title {
+  font-weight: 500;
+  font-size: 50px;
+  margin-bottom: 0;
+  color: linear-gradient(
+    243deg,
+    rgba(17, 10, 75, 0.868421052631579) 26%,
+    rgba(67, 64, 84, 0.86) 81%
+  );
+  padding-left: 0;
+  margin-left: 0;
+}
+.price {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  float: right;
+}
+.price p {
+  margin-top: 15px;
+}
+.whitelogo {
+  max-height: 45px;
+}
+.FaWallet {
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.navbar Button {
+  background: rgb(31, 199, 212);
+  margin-right: 5px;
+  max-height: 35px;
+  font-family: "Kanit", sans-serif;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+.navbar span {
+  margin-right: 20px;
+  max-height: 20px;
+  font-family: "Kanit", sans-serif;
+  margin-top: 20px;
+  border-radius: 30%;
+}
+
+/*  //////////// Main Screen ///////// */
+.home {
+  min-width: 100vh;
+
+  background: linear-gradient(
+    139.73deg,
+    rgb(49, 61, 92) 0%,
+    rgb(61, 42, 84) 100%
+  );
+  min-height: 80%;
+  max-height: fit-content;
+  border-top: 1px solid black;
+  text-align: center;
+  justify-items: center;
+}
+
+.content-box {
+  background-image: url("../assets/whitelogo.png");
+  background-position: center;
+
+  background-repeat: no-repeat;
+  display: flex;
+  max-width: fit-content;
+  min-height: 80%;
+  max-height: 100%;
+}
+.button-box {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.button-box Button {
+  background: rgb(56, 50, 65);
+  border: 2px solid #303550;
+  border-radius: 8px;
+  white-space: nowrap;
+  min-width: fit-content;
+  box-shadow: rgb(15, 15, 17) 0px 2px 2px;
+}
+
+.box {
+  position: relative;
+  min-width: 100vh;
+  text-align: center;
+  border-radius: 20% 20%;
+  width: 200px;
+  padding: 20px;
+  box-shadow: 0px 1px 8px rgb(0 0 0 / 10%);
+  background-color: #2d3153;
+  border: 2px solid #db8332;
+}
+
+/* /////////// My Account //////////////*/
+.leftmenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 20%;
+  max-width: 30%;
+  margin: 100px 10px 0 20px;
+  background: rgb(40, 37, 44);
+  border: 2px solid #232743;
+  border-radius: 8px;
+  padding: 15px;
+  height: 50%;
+}
+.staked-holder-rank {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.accountrewards {
+  padding: 10px;
+  border-radius: 2%;
+  background: rgb(56, 50, 65);
+  border: 2px solid rgb(82, 75, 99);
+  border-radius: 8px;
+  min-width: 100%;
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+.myaccount-btns {
+  display: flex;
+  flex-direction: row;
+}
+.myaccount-btns Button {
+  background: rgb(82, 75, 99);
+  border: 1px solid rgb(74, 73, 75);
+  font-family: "Kanit", sans-serif;
+  white-space: nowrap;
+}
+.myaccount-btns Button:hover {
+  box-shadow: rgb(177, 175, 182) 0px 1px 1px;
+}
+.myaccount-right-menu {
+  max-width: 55%;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+}
+.myaccount-stats {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 5px;
+  background: rgb(40, 37, 44);
+  border-radius: 8px;
+  justify-content: space-between;
+}
+.myaccount-actions {
+  display: flex;
+  flex-direction: column;
+  min-width: 30%;
+  border-bottom: 2px solid rgb(82, 75, 99);
+  margin: 3px;
+  text-align: left;
+}
+.myaccount-days {
+  display: flex;
+  flex-direction: column;
+  min-width: 30%;
+  border-bottom: 2px solid rgb(82, 75, 99);
+  margin: 3px;
+  text-align: left;
+}
+.myaccount-staked {
+  display: flex;
+  flex-direction: column;
+  min-width: 30%;
+  border-bottom: 2px solid rgb(82, 75, 99);
+  margin: 3px;
+  text-align: left;
+}
+.myaccount-topbanner {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 20px;
+  background: rgb(56, 50, 65);
+  border-radius: 8px;
+}
+.myaccount-assets {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  justify-content: space-between;
+  max-height: fit-content;
+}
+.myaccount-mytokensnfts {
+  display: flex;
+  flex-direction: column;
+  min-height: fit-content;
+  padding: 10px;
+  background: linear-gradient(
+    234deg,
+    rgba(27, 26, 35, 1) 8%,
+    rgba(102, 80, 179, 1) 19%,
+    rgba(33, 31, 42, 1) 30%,
+    rgba(45, 34, 111, 1) 100%
+  );
+  border-radius: 8px;
+  min-width: 45%;
+  margin-bottom: 20px;
+  opacity: 0.95;
+}
+.myaccount-assets-title {
+  display: flex;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+.myaccount-assets-tokens {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: fit-content;
+}
+
+/* ////////////// NFT BOX /////////////*/
+.nft-main {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-height: 100%;
+  min-height: 55%;
+  width: 100%;
+  margin-top: 10px;
+  overflow-y: scroll;
+  padding: 15px 0 15px 0;
+}
+
+.nft-main h2 {
+  min-width: 100%;
+}
+.nft-box {
+  padding: 2px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgb(81, 74, 95) 0px 5px 5px;
+  background: linear-gradient(
+    234deg,
+    rgba(27, 26, 35, 1) 23%,
+    rgba(69, 66, 79, 1) 61%,
+    rgba(55, 52, 66, 1) 69%,
+    rgba(33, 31, 42, 1) 85%,
+    rgba(66, 65, 71, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  min-height: fit-content;
+  max-width: 33%;
+  min-width: fit-content;
+
+  align-items: center;
+}
+
+.nft-box img {
+  max-width: 20vh;
+  max-height: 20vh;
+  margin-bottom: 2px;
+}
+.nft-header {
+  display: flex;
+  margin-top: auto;
+}
+.nft-text {
+  display: flex;
+  margin-top: auto;
+}
+.nft-main::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  background-color: #cccccc;
+}
+
+.nft-main::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+.nft-main::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #494949;
+  background-image: -webkit-linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 0, 0, 0.4) 50%,
+    transparent,
+    transparent
+  );
+}
+/* /////////////////My Earnings//////////////// */
+.earnings-leftmenu {
+  display: flex;
+  flex-direction: column;
+  min-height: 30%;
+  max-height: fit-content;
+  min-width: 40%;
+  max-width: 50%;
+  margin: 50px 10px 10px 10px;
+  padding: 15px;
+  background: linear-gradient(
+    352deg,
+    rgba(27, 26, 35, 1) 23%,
+    rgba(42, 34, 68, 0.9164040616246498) 69%,
+    rgba(76, 72, 93, 1) 100%
+  );
+  border-radius: 8px;
+  border: 2px solid rgb(82, 75, 99);
+}
+.earnings-stats {
+  padding: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.sliderbox {
+  background: rgb(56, 50, 65);
+  border-radius: 8px;
+  width: 98%;
+  border: 2px solid rgb(82, 75, 99);
+}
+.daysstaked {
+  color: #1b1e31;
+}
+.earnings-staked {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  align-items: center;
+}
+.earnings-stakeddays {
+  background: rgb(56, 50, 65);
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 15px;
+  padding: 15px;
+  margin-top: 50px;
+  border: 2px solid rgb(82, 75, 99);
+}
+.myrewards {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+.earnings-rewards-left {
+  border-right: 2px solid rgb(82, 75, 99);
+  padding: 15px;
+}
+.earnings-rewards-right {
+  display: flex;
+  flex-direction: column;
+}
+.earnings-rewards-right h4 {
+  margin-bottom: 5px;
+}
+.earnings-nft-main {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-height: 50%;
+  width: 80%;
+  max-height: 60%;
+  margin-top: 10px;
+  overflow-y: scroll;
+  padding: 15px 0 15px 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.earnings-nft-main::-webkit-scrollbar {
+  display: none;
+}
+
+/* ////////////// STAKING //////////// */
+.content-box-staking {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 120vh;
+  background: linear-gradient(
+    139.73deg,
+    rgb(49, 61, 92) 0%,
+    rgb(61, 42, 84) 100%
+  );
+}
+.main-container {
+  background-image: url("../assets/Logo.png");
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+  max-width: 80%;
+  margin-bottom: 25px;
+}
+.top-banner {
+  min-width: 100%;
+
+  justify-self: center;
+  margin-bottom: 20px;
+  border: 3px solid #434669;
+  background: #303550;
+  border-radius: 8px;
+  padding: 10px;
+  margin-left: auto;
+}
+.container1 {
+  min-width: 80%;
+  max-width: 100%;
+  display: flex;
+  min-height: 60%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.left-container {
+  opacity: 0.9;
+  border: 1px solid #434669;
+  min-width: 60%;
+  max-width: 60%;
+  padding: 25px;
+  background: #2d3153;
+  border-radius: 8px;
+}
+.right-container {
+  min-width: 30%;
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.top-container {
+  min-width: 90%;
+  max-width: 100%;
+  min-height: 25%;
+  margin: 10px;
+  justify-content: space-between;
+  display: flex;
+  background-color: #1b1e31;
+  border: 2px solid #434669;
+  border-radius: 8px;
+}
+.bottom-container {
+  min-width: 90%;
+  max-width: 100%;
+  min-height: 30vh;
+  border: 1px solid #434669;
+  background-color: #1b1e31;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.staking-apy {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.staking-apy Button {
+  background: rgb(82, 75, 99);
+  border: 1px solid rgb(74, 73, 75);
+  font-family: "Kanit", sans-serif;
+}
+.staking-apy Button:hover {
+  box-shadow: rgb(177, 175, 182) 0px 1px 1px;
+}
+.stake-btns {
+  gap: 5px;
+  display: flex;
+  align-self: center;
+  margin-top: 5px;
+  padding: 5px;
+}
+.stake-btns button {
+  background: rgb(82, 75, 99);
+  border: 1px solid rgb(74, 73, 75);
+  font-family: "Kanit", sans-serif;
+}
+.stake-btns button:hover {
+  box-shadow: rgb(177, 175, 182) 0px 2px 2px;
+}
+.form-input {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.form-input form {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.form-input input {
+  width: 80%;
+  background-color: #2d3153;
+  border-radius: 5%;
+  margin-right: 5px;
+}
+.form-input Button {
+  background: rgb(82, 75, 99);
+  border: 1px solid rgb(74, 73, 75);
+  font-family: "Kanit", sans-serif;
+}
+.form-input Button:hover {
+  box-shadow: rgb(177, 175, 182) 0px 1px 1px;
+}
+.staked-container {
+  border: 3px solid #434669;
+  background: #303550;
+  border-radius: 8px;
+  margin: 20px 10px 20px 10px;
+  min-height: 35%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.staked-top {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-bottom: 2px solid rgb(97, 101, 160);
+}
+.unstaked-container {
+  border: 3px solid #434669;
+  background: #303550;
+  border-radius: 8px;
+  margin: 10px;
+  min-height: 35%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.unstaked-top {
+  margin-bottom: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 2px solid rgb(97, 101, 160);
+}
+/* ////// MODAL /////// */
+.APYStatsModal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 30%;
+  width: 20%;
+  height: 30%;
+  min-width: fit-content;
+  border: 3px solid #434669;
+  background: #303550;
+  border-radius: 8px;
+  padding: 15px;
+}
+.closer {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-bottom: 30px;
+}
+.close-btn {
+  display: flex;
+  float: right;
+  cursor: pointer;
+}
+.modal-apr {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.modal-liq {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/*///////////// Pools //////////////////*/
+.pool-box {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  max-width: 100%;
+  align-items: center;
+  background-image: url("../assets/Logo.png");
+  background-position: center;
+}
+.top-container-pools {
+  margin-top: 20px;
+  min-width: 80%;
+  display: flex;
+  min-height: 50%;
+  justify-content: space-between;
+}
+.mainpool {
+  min-width: 45%;
+  min-height: 100%;
+
+  background: linear-gradient(
+    234deg,
+    rgba(27, 26, 35, 1) 8%,
+    rgba(102, 80, 179, 1) 19%,
+    rgba(33, 31, 42, 1) 30%,
+    rgba(45, 34, 111, 1) 100%
+  );
+  opacity: 0.9;
+  border: 2px solid rgb(82, 75, 99);
+
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+.mainpool:hover {
+  box-shadow: rgb(81, 74, 95) 0px 5px 5px;
+}
+.bottom-container-pools {
+  margin-top: 30px;
+
+  max-width: 100%;
+  display: flex;
+  min-height: 50vh;
+
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.secondary-pool {
+  opacity: 0.9;
+  min-height: 25%;
+  min-width: 30%;
+  margin: 10px;
+  border: 2px solid rgb(48, 44, 44);
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  padding: 10px;
+  background-color: rgb(39, 38, 44);
+  border-radius: 8px;
+}
+.pool-title {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.pool-title img {
+  max-width: 35px;
+  max-height: 35px;
+}
+.pool-apr {
+  margin: 10px 0 5px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pool-earn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.rewards-claim {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.earned-rewards {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+.rewards-claim Button {
+  background: rgb(134, 134, 136);
+  border: 1px solid rgb(43, 43, 44);
+  font-family: "Kanit", sans-serif;
+  height: 25px;
+  min-width: 50px;
+  font-size: 12px;
+  color: #2d2d35;
+}
+.rewards-claim Button:hover {
+  box-shadow: rgb(177, 175, 182) 0px 1px 1px;
+  border: 1px solid;
+}
+
+.enablecontractbtn Button {
+  margin-top: 15px;
+  background: rgb(82, 75, 99);
+  border: 1px solid rgb(74, 73, 75);
+  font-family: "Kanit", sans-serif;
+  color: #f5f5ff;
+}
+.enablecontractbtn Button:hover {
+  box-shadow: rgb(177, 175, 182) 0px 1px 1px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-width: 100vh;
+  text-align: center;
+  border-top: 5px solid grey;
+  padding: 15px 0px 15px 0px;
+  background-color: #242731;
+  bottom: 0;
+  position: relative;
+}
+.social-icon {
+  width: 35px;
+  height: 25px;
+}
